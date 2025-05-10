@@ -49,7 +49,7 @@ cd pkg/logits_processors
 pip install -e .
 ```
 
-- for language evolution (simulation based on conversations using AutoGen)
+- for language evolution (simulation based on conversations using [AutoGen](https://github.com/microsoft/autogen))
 ```bash
 conda create -n ecolang-evo python=3.10
 conda activate ecolang-evo
