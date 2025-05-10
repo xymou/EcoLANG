@@ -61,7 +61,7 @@ cd pkg/logits_processors
 pip install -e .
 ```
 
-- for simulation (simulation based on OASIS)
+- for simulation (simulation based on [OASIS](https://github.com/camel-ai/oasis))
 ```bash
 conda create -n ecolang-simu python=3.10
 conda activate ecolang-simu
