@@ -1,6 +1,6 @@
 # ♻EcoLANG: Efficient and Effective Agent Communication Language Induction for Social Simulation
 
-This repository is the implementation of our paper [EcoLANG: Efficient and Effective Agent Communication Language Induction for Social Simulation](). 
+This repository is the implementation of our paper [EcoLANG: Efficient and Effective Agent Communication Language Induction for Social Simulation]().   
 ![overview](imgs/overview.png)
 
 ## 🚀 Contents
@@ -22,7 +22,7 @@ Language evolution is conducted on the dev set of [Synthetic-Persona-Chat](https
 ### Social Simulation
 Social simulation is validated on [PHEME](https://aclanthology.org/C18-1288/) and Metoo & Roe movements of [HiSim](https://aclanthology.org/2024.findings-acl.285/) dataset.
 
-- PHEME: To effectively observe the communication (content), we preserved the reactions in each thread of PHEME and removed replies that could not reconstruct the propagation chain (i.e., tweets that could not be matched to a parent tweet). This resulted in retaining 196 threads (i.e., 196 scenarios), which were then formatted for OASIS simulation. See ./data/pheme for the processed data.
+- PHEME: To effectively observe the communication (content), we preserved the reactions in each thread of PHEME and removed replies that could not reconstruct the propagation chain (i.e., tweets that could not be matched to a parent tweet). This resulted in retaining 196 threads (i.e., 196 scenarios), which were then formatted for OASIS simulation. See `./data/pheme` for the processed data.
 - HiSim: Due to the Twitter's terms of service, we can not release the raw text data or the user data. Please contact the author (via xymou20@fudan.edu.cn) if you need the processed data in the OASIS simulation format.
 
 ## 🏃‍♂️ Get Started
@@ -30,9 +30,10 @@ Social simulation is validated on [PHEME](https://aclanthology.org/C18-1288/) an
 EcoLANG requires three conda environments:
 - ecolang-vllm: for vLLM deployment;
 - ecolang-evo: for language rule evolution; 
-- ecolang-simu: for validation of social simulation.
-*To support custom vocabulary for generation, modifications need to be made to parts of the vllm, camel and oasis code. Please refer to the following two tar archive files (./pkg).*
+- ecolang-simu: for validation of social simulation.  
+*To support custom vocabulary for generation, modifications need to be made to parts of the vllm, camel and oasis code. Please refer to the following two tar archive files (`./pkg`).*
 
+---------
 
 - for llm serving
 ```bash
@@ -108,7 +109,7 @@ EcoLANG/
 
 ### Evolution
 Evolve the language rules through simulations of syn-persona-chat dataset. Here are some examples showing how to run the code.  
-Remember to give your base_url and api_key in the scripts.
+Remember to give your `base_url` and `api_key` in the scripts.
 
 - serve the LLMs using vLLM
 ```bash
@@ -141,7 +142,8 @@ bash scripts/run_hisim_vocab_topdown_rule.sh # run ecolang (vocab+rule)
 bash scripts/run_pheme_vocab_topdown_rule.sh # run ecolang (vocab+rule)
 ```
 
-The evaluation process will be carried out in the simulation code above. More details can be found in code/evaluation_prl.py
+The evaluation process will be carried out in the simulation code above. More details can be found in code/evaluation_prl.py  
+Remember to give your `base_url` and `api_key` in the scripts.
 
 
 ## ✍️ Citation
