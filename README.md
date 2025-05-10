@@ -3,7 +3,7 @@
 This repository is the implementation of our paper [EcoLANG: Efficient and Effective Agent Communication Language Induction for Social Simulation]().   
 ![overview](imgs/overview.png)
 
-## 🚀 Contents
+## 🚀Contents
 - [Abstract](#Abstract)
 - [Dataset](#Dataset)
 - [Getting Started](#Getting-Started)
@@ -25,7 +25,7 @@ Social simulation is validated on [PHEME](https://aclanthology.org/C18-1288/) an
 - PHEME: To effectively observe the communication (content), we preserved the reactions in each thread of PHEME and removed replies that could not reconstruct the propagation chain (i.e., tweets that could not be matched to a parent tweet). This resulted in retaining 196 threads (i.e., 196 scenarios), which were then formatted for OASIS simulation. See `./data/pheme` for the processed data.
 - HiSim: Due to the Twitter's terms of service, we can not release the raw text data or the user data. Please contact the author (via xymou20@fudan.edu.cn) if you need the processed data in the OASIS simulation format.
 
-## 🏃‍♂️ Get Started
+## 🏃‍♂️Get Started
 ### Installation
 EcoLANG requires three conda environments:
 - ecolang-vllm: for vLLM deployment;
@@ -146,7 +146,7 @@ The evaluation process will be carried out in the simulation code above. More de
 Remember to give your `base_url` and `api_key` in the scripts.
 
 
-## ✍️ Citation
+## ✍️Citation
 Please consider citing this paper if you find this repository useful:
 ```bash
 
