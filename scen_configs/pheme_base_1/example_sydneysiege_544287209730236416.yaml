@@ -1,0 +1,39 @@
+data:
+  db_path: ../output/pheme_base_1//sydneysiege_544287209730236416.db
+  csv_path: ../data/pheme/processed//sydneysiege_544287209730236416.csv
+  token_path: ../output/pheme_base_1//sydneysiege_544287209730236416.json
+simulation:
+  num_timesteps: 3
+  clock_factor: 60
+  recsys_type: twhin-bert
+  source_post_time: 00:25:57+0000
+model:
+  num_agents: 10
+  model_random_seed: 42
+  cfgs:
+  - model_type: llama-3
+    num: 10
+    server_url: http://0.0.0.0:8000/v1
+    model_path: /remote-home/share/LLM_CKPT/huggingface_models/Llama-3.1-8B-Instruct
+    stop_tokens:
+    - <|eot_id|>
+    - <|end_of_text|>
+    temperature: 0
+    max_tokens: 512
+inference:
+  model_type: llama-3
+  model_path: /remote-home/share/LLM_CKPT/huggingface_models/Llama-3.1-8B-Instruct
+  temperature: 0
+  max_tokens: 512
+  vocab_path: ''
+  stop_tokens:
+  - <|eot_id|>
+  - <|end_of_text|>
+  server_url:
+  - host: 0.0.0.0
+    ports:
+    - 8001
+    - 8002
+    - 8003
+    - 8004
+prompt_path: ../configs/action_space_prompt.txt
