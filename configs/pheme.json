@@ -1,0 +1,19 @@
+{
+    "llm":{
+        "model": "llama-3",
+        "base_url": "http://0.0.0.0:8000/v1",
+        "api_key": "1234",
+        "api_type":"openai",
+        "model_path":"/remote-home/share/LLM_CKPT/huggingface_models/Llama-3.1-8B-Instruct",
+        "temperature": 0,
+        "max_tokens": 512
+        },
+    "server_url":"0.0.0.0",
+    "ports":[8001,8002,8003,8004],
+    "base_prompt_path":"../configs/action_space_prompt.txt",
+    "ref_data_path":"../data/pheme/ref_data/",
+    "start_time_dict":"../data/pheme/twt2time.json",
+    "num_timesteps":20,
+    "clock_factor":60,
+    "recsys_type":"twhin-bert"
+}

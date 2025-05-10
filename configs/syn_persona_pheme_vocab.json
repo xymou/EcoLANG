@@ -1,0 +1,14 @@
+{
+    "llm":{
+        "model": "llama-3",
+        "base_url": "0.0.0.0",
+        "api_key": "1234",
+        "api_type":"openai",
+        "ports":[8001,8002,8003,8004],
+        "temperature": 1,
+        "max_tokens": 128,
+        "vocab_path":"../data/vocab/pheme_vocab_llama31_topdown_06.pkl"
+        },
+    "max_round":15,
+    "speaker_selection_method":"round_robin"
+}

@@ -1,0 +1,27 @@
+{
+    "llm":{
+        "model": "llama-3",
+        "base_url": "http://0.0.0.0:8000/v1",
+        "api_key": "1234",
+        "api_type":"openai",
+        "model_path":"/remote-home/share/LLM_CKPT/huggingface_models/Llama-3.1-8B-Instruct",
+        "temperature": 0,
+        "max_tokens": 512,
+        "vocab_path":"../data/vocab/vocab_llama31_topdown_02.pkl"
+        },
+    "server_url":"0.0.0.0",
+    "ports":[8001,8002,8003,8004],
+    "base_prompt_path":"../configs/hisim_action_space_prompt.txt",
+    "num_timesteps":14,
+    "clock_factor":60,
+    "recsys_type":"twhin-bert",
+    "trigger_news":{
+        "metoo":{
+            "1":"External News (cannot be reposted): 1. A month ago, President Donald Trump enthusiastically endorsed Roy Moore, the Alabama Senate candidate accused of sexual misconduct, on Twitter.\n2. At the Golden Globes Awards ceremony in Los Angeles, most guests showed up dressed in black out of solidarity with the MeToo and Time's Up movement and the victims of sexual violence."
+        },
+        "roe":{
+            "1": "External News (cannot be reposted): The Supreme Court overturns Roe v. Wade, effectively ending nearly 50 years of federally guaranteed access to abortion. Chief Justice John Roberts joined the conservative justices in the decision to uphold Mississippi's law, but urged a concurring opinion concerning Roe. The decision is expected to lead to abortion bans in roughly half the states in the nation.",
+            "12": "External News (cannot be reposted): More than 180 abortion rights protesters were arrested in Washington, D.C. after sitting and blocking an intersection near the Supreme Court."
+        }
+    }
+}
