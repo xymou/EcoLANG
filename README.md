@@ -87,7 +87,7 @@ pip install -e .
 EcoLANG/
 │
 ├── configs/ # overall configs of simulation
-├── scen_configs/ # config files of each scenario of a dataset 
+├── scen_configs/ # config files of each scenario of a dataset (automatically generated when running simulation) 
 ├── data/ # dataset
 ├── rules/ # initialized and evolved rules
 ├── pkg/ # modified vllm, camel and oasis code for this work
@@ -112,6 +112,7 @@ EcoLANG/
 
 ### Evolution
 Evolve the language rules through simulations of syn-persona-chat dataset. Here are some examples showing how to run the code.  
+The compressed vocabs are in `./data/vocab`.  
 Remember to give your `base_url` and `api_key` in the scripts.
 
 - serve the LLMs using vLLM
