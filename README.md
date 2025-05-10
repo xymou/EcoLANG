@@ -1,6 +1,7 @@
 # ♻EcoLANG: Efficient and Effective Agent Communication Language Induction for Social Simulation
 
 This repository is the implementation of our paper [EcoLANG: Efficient and Effective Agent Communication Language Induction for Social Simulation]().   
+  
 ![overview](imgs/overview.png)
 
 ## 🚀Contents
@@ -81,15 +82,17 @@ cd logits_processors
 pip install -e .
 ```
 
-- structure
+- code structure
 ```bash
 EcoLANG/
 │
 ├── configs/ # overall configs of simulation
-├── scene_configs/ # config files of each scenario of a dataset 
+├── scen_configs/ # config files of each scenario of a dataset 
 ├── data/ # dataset
 ├── rules/ # initialized and evolved rules
 ├── pkg/ # modified vllm, camel and oasis code for this work
+├── output/ # simulation results
+├── score_ckpt/ # save intermediate evaluation results
 └── code/ 
     ├── scripts/ # sh command set for simulation
     ├── run_evolution.py # main file of language evolution
