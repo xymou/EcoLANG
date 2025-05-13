@@ -32,7 +32,7 @@ EcoLANG requires three conda environments:
 - ecolang-vllm: for vLLM deployment;
 - ecolang-evo: for language rule evolution; 
 - ecolang-simu: for validation of social simulation.  
-*To support custom vocabulary for generation, modifications need to be made to parts of the vllm, camel and oasis code. Please refer to the following two tar archive files (`./pkg`).*
+*To support custom vocabulary for generation, modifications need to be made to parts of the vllm, camel and oasis code. Please refer to the zip files in (`./pkg`).*
 
 ---------
 
