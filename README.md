@@ -1,6 +1,6 @@
 # ♻EcoLANG: Efficient and Effective Agent Communication Language Induction for Social Simulation
 
-This repository is the implementation of our paper [EcoLANG: Efficient and Effective Agent Communication Language Induction for Social Simulation]().   
+This repository is the implementation of our paper [EcoLANG: Efficient and Effective Agent Communication Language Induction for Social Simulation](https://arxiv.org/abs/2505.06904).   
   
 ![overview](imgs/overview.png)
 
@@ -153,5 +153,10 @@ Remember to give your `base_url` and `api_key` in the scripts.
 ## ✍️Citation
 Please consider citing this paper if you find this repository useful:
 ```bash
-
+@article{mou2025ecolang,
+  title={EcoLANG: Efficient and Effective Agent Communication Language Induction for Social Simulation},
+  author={Xinyi Mou and Chen Qian and Wei Liu and Xuanjing Huang and Zhongyu Wei},
+  journal={arXiv preprint arXiv:2505.06904},
+  year={2025}
+}
 ```
